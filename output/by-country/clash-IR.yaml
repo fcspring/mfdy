@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+- name: 🇮🇷 IR 01 - xiaohe
   type: vless
-  server: 104.16.174.164
+  server: ir.dl.stormrp.ir
   port: 443
-  uuid: 73796e63-0000-4000-8000-000000000000
+  uuid: 2592b640-5060-4cc8-9ad7-bd2834a2d45b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wireguard.ahmad-kh5716.workers.dev
+  servername: ir.dl.stormrp.ir
   network: ws
   ws-opts:
-    path: /sync
+    path: /api-mp4
     headers:
-      Host: wireguard.ahmad-kh5716.workers.dev
+      Host: ir.dl.stormrp.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 rules:
 - MATCH,PROXIES
