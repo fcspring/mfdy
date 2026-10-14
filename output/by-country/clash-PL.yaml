@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
   servername: www.ceneo.pl
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
   server: pl.flen-vpn.xyz
